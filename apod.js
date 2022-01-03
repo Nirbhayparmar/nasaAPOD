@@ -26,7 +26,14 @@ function useData(data){
     Heading.innerHTML=title;
     img.src=source;
     description.innerHTML=data.explanation;
-    if(data.copyright){copyright.innerHTML=`Copyright: ${data.copyright}`;}
+    if(data.copyright)
+    {
+      copyright.innerHTML=`Copyright: ${data.copyright}`;
+    }
+    else
+    {
+      copyright.innerHTML='';
+    }
     
 }
 // window.addEventListener('load', fetchData);
