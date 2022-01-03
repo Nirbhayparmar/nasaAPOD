@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="apod.css">
+    <title>NASA APOD API TEST</title>
+</head>
+<body>
+    <div class="content">
+        <div class="header">
+            <h1>NASA Astronomy Photo of the Day</h1>
+            <p>This will fetch the APOD for the choosen date from the NASA database by using APOD API.</p>
+        </div>
+        <div class="controls">
+            <form>
+                <label for="datePicker">Choose Date for the Astronomy Picture of the Day:</label>
+                <input type="date" id="date" name="datePicker" value="2001-12-14">
+                <input type="button" value="Click to view" id="btn">
+                <input type="button" value="Click to view today's APOD" id="btn1">
+            </form>
+        </div>
+        <div class="container">
+            <h2 id="title"></h2>
+            <img src="" id="image" class="img">
+            <p id="detail"></p>
+            <p class="copyright" id="copyright"></p>
+        </div>
+    </div>
+    <script src="apod.js"></script>
+</body>
+</html>
